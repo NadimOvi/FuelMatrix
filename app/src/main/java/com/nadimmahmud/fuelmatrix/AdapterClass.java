@@ -39,10 +39,10 @@ public class AdapterClass extends RecyclerView.Adapter<AdapterClass.ViewHolder> 
     public void onBindViewHolder(@NonNull AdapterClass.ViewHolder holder, int position) {
         Tank dataList = list.get(position);
         String tankNameShow = dataList.getTank_name();
-        int heightShow = dataList.getHeight();
-        int VolumeShow = dataList.getVolume();
+        double heightShow = dataList.getHeight();
+        double VolumeShow = dataList.getVolume();
 
-        holder.colorSet.setHeight(VolumeShow-heightShow);
+        holder.colorSet.setHeight((int) (VolumeShow-heightShow));
         /*holder.params.height = VolumeShow- heightShow+60;
         holder.colorSet.setLayoutParams(holder.params);*/
 

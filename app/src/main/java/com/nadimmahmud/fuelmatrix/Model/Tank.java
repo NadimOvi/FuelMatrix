@@ -4,15 +4,15 @@ public class Tank {
    private int tank_id;
    private String tank_name;
    private String date;
-   private int height;
-   private int volume;
+   private double height;
+   private double volume;
    private String height_unit;
    private String volume_unit;
 
     public Tank() {
     }
 
-    public Tank(int tank_id, String tank_name, String date, int height, int volume, String height_unit, String volume_unit) {
+    public Tank(int tank_id, String tank_name, String date, double height, double volume, String height_unit, String volume_unit) {
         this.tank_id = tank_id;
         this.tank_name = tank_name;
         this.date = date;
@@ -46,19 +46,19 @@ public class Tank {
         this.date = date;
     }
 
-    public int getHeight() {
+    public double getHeight() {
         return height;
     }
 
-    public void setHeight(int height) {
+    public void setHeight(double height) {
         this.height = height;
     }
 
-    public int getVolume() {
+    public double getVolume() {
         return volume;
     }
 
-    public void setVolume(int volume) {
+    public void setVolume(double volume) {
         this.volume = volume;
     }
 
