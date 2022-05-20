@@ -124,7 +124,7 @@ public class UserListActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<tankList> call, Throwable t) {
               /*  progressDialog.dismiss();*/
-                Toast.makeText(UserListActivity.this, "Status Error", Toast.LENGTH_SHORT).show();
+                /*Toast.makeText(UserListActivity.this, "Status Error", Toast.LENGTH_SHORT).show();*/
             }
         });
     }

@@ -41,6 +41,8 @@ public class AdapterClass extends RecyclerView.Adapter<AdapterClass.ViewHolder> 
         String tankNameShow = dataList.getTank_name();
         double heightShow = dataList.getHeight();
         double VolumeShow = dataList.getVolume();
+        String height_unit = dataList.getHeight_unit();
+        String volume_unit = dataList.getVolume_unit();
 
         holder.colorSet.setHeight((int) (VolumeShow-heightShow));
         /*holder.params.height = VolumeShow- heightShow+60;
@@ -49,8 +51,8 @@ public class AdapterClass extends RecyclerView.Adapter<AdapterClass.ViewHolder> 
         /*holder.lp.height= 180;*/
 
         holder.tank_name.setText(tankNameShow);
-        holder.height.setText(String.valueOf(heightShow+ " inch"));
-        holder.volume.setText(String.valueOf(VolumeShow+ " Litres"));
+        holder.height.setText(String.valueOf(heightShow+" "+height_unit));
+        holder.volume.setText(String.valueOf(VolumeShow+" "+volume_unit));
 
         if (position % 4 == 0){
             holder.height.setBackgroundColor(Color.parseColor("#7F64DC"));
